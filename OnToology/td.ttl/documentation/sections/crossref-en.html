@@ -1,0 +1,1506 @@
+<h2  id="crossreference" class="list">Cross reference for Ontology model for Web of Things classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontology model for Web of Things.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Action" title="http://www.w3.org/ns/td#Action">Action</a>
+      </li>
+      <li>
+         <a href="#Data" title="http://www.w3.org/ns/td#Data">Data</a>
+      </li>
+      <li>
+         <a href="#Event" title="http://www.w3.org/ns/td#Event">Event</a>
+      </li>
+      <li>
+         <a href="#Form" title="http://www.w3.org/ns/td#Form">Form</a>
+      </li>
+      <li>
+         <a href="#InteractionPattern" title="http://www.w3.org/ns/td#InteractionPattern">InteractionPattern</a>
+      </li>
+      <li>
+         <a href="#Link" title="http://www.w3.org/ns/td#Link">Link</a>
+      </li>
+      <li>
+         <a href="#Property" title="http://www.w3.org/ns/td#Property">Property</a>
+      </li>
+      <li>
+         <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+      </li>
+      <li>
+         <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+      </li>
+      <li>
+         <a href="#Versioning" title="http://www.w3.org/ns/td#Versioning">Versioning</a>
+      </li>
+   </ul>
+   <div class="entity" id="Action">
+      <h3>Action<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#Action</p>
+      <div class="comment">
+         <span class="markdown">Actions offer functions of the Thing. These functions may manipulate the interal state of a Thing in a way that is not possible through setting Properties. Examples are changing internal state that is not exposed as a Property, changing multiple Properties, changing Properties over time or with a process that should not be disclosed. Actions may also be pure functions, that is, they may not use any internal state at all, and may simply process input data and return a result that directly depends only on the input given.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InteractionPattern" title="http://www.w3.org/ns/td#InteractionPattern">InteractionPattern</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#idempotent" title="http://www.w3.org/ns/td#idempotent">idempotent</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#input" title="http://www.w3.org/ns/td#input">input</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#output" title="http://www.w3.org/ns/td#output">output</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/td#scope">scope</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#idempotent" title="http://www.w3.org/ns/td#idempotent">idempotent</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#input" title="http://www.w3.org/ns/td#input">input</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#output" title="http://www.w3.org/ns/td#output">output</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#safe" title="http://www.w3.org/ns/td#safe">safe</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#actions" title="http://www.w3.org/ns/td#actions">actions</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Data">
+      <h3>Data<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#Data</p>
+      <div class="comment">
+         <span class="markdown">Any part of a Thing that is represented by some piece of data (e.g. a temperarture quantity represented by a JSON number). Data and Specification are related in the sense that the former can embed specification elements (for the sake of conciseness), thus being its own specification.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#specifiedBy" title="http://www.w3.org/ns/td#specifiedBy">specified by</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Property" title="http://www.w3.org/ns/td#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#specifiedBy" title="http://www.w3.org/ns/td#specifiedBy">specified by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Event">
+      <h3>Event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#Event</p>
+      <div class="comment">
+         <span class="markdown">The Event Interaction Pattern describes event sources that asynchronously push messages. Here not state, but state transitions (events) are communicated (e.g., "clicked"). Events may be triggered by internal state changes that are not exposed as Properties. Events usually follow strong consistency, where messages need to be queued to ensure eventual delivery of all events that have occurred.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InteractionPattern" title="http://www.w3.org/ns/td#InteractionPattern">InteractionPattern</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#cancellation" title="http://www.w3.org/ns/td#cancellation">cancellation</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#data" title="http://www.w3.org/ns/td#data">data</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#subscription" title="http://www.w3.org/ns/td#subscription">subscription</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#cancellation" title="http://www.w3.org/ns/td#cancellation">cancellation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#data" title="http://www.w3.org/ns/td#data">data</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#subscription" title="http://www.w3.org/ns/td#subscription">subscription</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#events" title="http://www.w3.org/ns/td#events">events</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Form">
+      <h3>Form<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#Form</p>
+      <div class="comment">
+         <span class="markdown">Communication metadata indicating where a service can be accessed by a client application. An interaction might have more than one form.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#href" title="http://www.w3.org/ns/td#href">href</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+         </dd>
+         <dd>
+            <a href="#contentType" title="http://www.w3.org/ns/td#contentType">contentType</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dd>
+            <a href="#op" title="http://www.w3.org/ns/td#op">op</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dd>
+            <a href="#subprotocol" title="http://www.w3.org/ns/td#subprotocol">subprotocol</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#subprotocol" title="http://www.w3.org/ns/td#subprotocol">subprotocol</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#forms" title="http://www.w3.org/ns/td#forms">forms</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InteractionPattern">
+      <h3>InteractionPattern<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#InteractionPattern</p>
+      <div class="comment">
+         <span class="markdown">Three interaction patterns are defined as subclasses: Property, Action and Event. When a concrete Property, Action or Event is defined in a Thing Description, it is called an "interaction resource". Interactions between Things can be as simple as one Thing accessing another Thing's data to get or (in the case the data is also writable) change the representation of data such as metadata, status or mode. A Thing may also be interested in getting asynchronously notified of future changes in another Thing, or may want to initiate a process served in another Thing that may take some time to complete and monitor the progress. Interactions between Things may involve exchanges of data between them. This data can be either given as input by the client Thing, returned as output by the server Thing or both.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#uriVariables" title="http://www.w3.org/ns/td#uriVariables">uriVariables</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="http://www.w3.org/ns/td#DataSchema">data schema</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#uriVariables" title="http://www.w3.org/ns/td#uriVariables">uriVariables</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Form" title="http://www.w3.org/ns/td#Form">Form</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#forms" title="http://www.w3.org/ns/td#forms">forms</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Form" title="http://www.w3.org/ns/td#Form">Form</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#description" title="http://www.w3.org/ns/td#description">description</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dd>
+            <a href="#title" title="http://www.w3.org/ns/td#title">title</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Action" title="http://www.w3.org/ns/td#Action">Action</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Event" title="http://www.w3.org/ns/td#Event">Event</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Property" title="http://www.w3.org/ns/td#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#forms" title="http://www.w3.org/ns/td#forms">forms</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#uriVariables" title="http://www.w3.org/ns/td#uriVariables">uriVariables</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#interactions" title="http://www.w3.org/ns/td#interactions">interactions</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Link">
+      <h3>Link<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#Link</p>
+      <div class="comment">
+         <span class="markdown">A Web link, as specified by IETF RFC 8288 (https://tools.ietf.org/html/rfc8288).</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#href" title="http://www.w3.org/ns/td#href">href</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+         </dd>
+         <dd>
+            <a href="#anchor" title="http://www.w3.org/ns/td#anchor">anchor</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+         </dd>
+         <dd>
+            <a href="#href" title="http://www.w3.org/ns/td#href">href</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+         </dd>
+         <dd>
+            <a href="#rel" title="http://www.w3.org/ns/td#rel">rel</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dd>
+            <a href="#type" title="http://www.w3.org/ns/td#type">type</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#anchor" title="http://www.w3.org/ns/td#anchor">anchor</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#op" title="http://www.w3.org/ns/td#op">op</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#rel" title="http://www.w3.org/ns/td#rel">rel</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#links" title="http://www.w3.org/ns/td#links">links</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Property">
+      <h3>Property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#Property</p>
+      <div class="comment">
+         <span class="markdown">Properties expose internal state of a Thing that can be directly retrieved (get) and optionally modified (set). In addition, Things can also choose to make Properties observable by pushing the new state (not an event) after a change; this must follow eventual consistency (also see CAP Theorem).</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Data" title="http://www.w3.org/ns/td#Data">Data</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#InteractionPattern" title="http://www.w3.org/ns/td#InteractionPattern">InteractionPattern</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#observable" title="http://www.w3.org/ns/td#observable">observable</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#observable" title="http://www.w3.org/ns/td#observable">observable</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#properties" title="http://www.w3.org/ns/td#properties">properties</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Specification">
+      <h3>Specification<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#Specification</p>
+      <div class="comment">
+         <span class="markdown">Data specification (e.g. a JSON schema) to use for validation of concrete data exchanged between servients.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#cancellation" title="http://www.w3.org/ns/td#cancellation">cancellation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#data" title="http://www.w3.org/ns/td#data">data</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#idempotent" title="http://www.w3.org/ns/td#idempotent">idempotent</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#input" title="http://www.w3.org/ns/td#input">input</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#output" title="http://www.w3.org/ns/td#output">output</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#safe" title="http://www.w3.org/ns/td#safe">safe</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#specifiedBy" title="http://www.w3.org/ns/td#specifiedBy">specified by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#subscription" title="http://www.w3.org/ns/td#subscription">subscription</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Thing">
+      <h3>Thing<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#Thing</p>
+      <div class="comment">
+         <span class="markdown">Describes a physical and/or virtual Thing (may represent one or more physical and/or virtual Things) in the Web of Things context.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#actions" title="http://www.w3.org/ns/td#actions">actions</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Action" title="http://www.w3.org/ns/td#Action">Action</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#events" title="http://www.w3.org/ns/td#events">events</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Event" title="http://www.w3.org/ns/td#Event">Event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#links" title="http://www.w3.org/ns/td#links">links</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Link" title="http://www.w3.org/ns/td#Link">Link</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#properties" title="http://www.w3.org/ns/td#properties">properties</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Property" title="http://www.w3.org/ns/td#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#version" title="http://www.w3.org/ns/td#version">version</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#Versioning" title="http://www.w3.org/ns/td#Versioning">Versioning</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#name" title="http://www.w3.org/ns/td#name">name</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dd>
+            <a href="#base" title="http://www.w3.org/ns/td#base">base</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+         </dd>
+         <dd>
+            <a href="#created" title="http://www.w3.org/ns/td#created">created</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dd>
+            <a href="#description" title="http://www.w3.org/ns/td#description">description</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dd>
+            <a href="#lastModified" title="http://www.w3.org/ns/td#lastModified">lastModified</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dd>
+            <a href="#support" title="http://www.w3.org/ns/td#support">support</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#actions" title="http://www.w3.org/ns/td#actions">actions</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#base" title="http://www.w3.org/ns/td#base">base</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#created" title="http://www.w3.org/ns/td#created">created</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#events" title="http://www.w3.org/ns/td#events">events</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#interactions" title="http://www.w3.org/ns/td#interactions">interactions</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#lastModified" title="http://www.w3.org/ns/td#lastModified">lastModified</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#links" title="http://www.w3.org/ns/td#links">links</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#name" title="http://www.w3.org/ns/td#name">name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#properties" title="http://www.w3.org/ns/td#properties">properties</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#support" title="http://www.w3.org/ns/td#support">support</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#version" title="http://www.w3.org/ns/td#version">version</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Versioning">
+      <h3>Versioning<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#Versioning</p>
+      <div class="comment">
+         <span class="markdown">Carries version information about the TD instance. If required, additional version information such as firmware and hardware version (term definitions outside of the TD namespace) can be extended here.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#instance" title="http://www.w3.org/ns/td#instance">instance</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">only</span> 
+            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#version" title="http://www.w3.org/ns/td#version">version</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#actions" title="http://www.w3.org/ns/td#actions">actions</a>
+      </li>
+      <li>
+         <a href="#cancellation" title="http://www.w3.org/ns/td#cancellation">cancellation</a>
+      </li>
+      <li>
+         <a href="#data" title="http://www.w3.org/ns/td#data">data</a>
+      </li>
+      <li>
+         <a href="#events" title="http://www.w3.org/ns/td#events">events</a>
+      </li>
+      <li>
+         <a href="#forms" title="http://www.w3.org/ns/td#forms">forms</a>
+      </li>
+      <li>
+         <a href="#idempotent" title="http://www.w3.org/ns/td#idempotent">idempotent</a>
+      </li>
+      <li>
+         <a href="#input" title="http://www.w3.org/ns/td#input">input</a>
+      </li>
+      <li>
+         <a href="#interactions" title="http://www.w3.org/ns/td#interactions">
+            <span>interactions</span>
+         </a>
+      </li>
+      <li>
+         <a href="#links" title="http://www.w3.org/ns/td#links">links</a>
+      </li>
+      <li>
+         <a href="#output" title="http://www.w3.org/ns/td#output">output</a>
+      </li>
+      <li>
+         <a href="#properties" title="http://www.w3.org/ns/td#properties">properties</a>
+      </li>
+      <li>
+         <a href="#safe" title="http://www.w3.org/ns/td#safe">safe</a>
+      </li>
+      <li>
+         <a href="#security" title="http://www.w3.org/ns/td#security">security</a>
+      </li>
+      <li>
+         <a href="#specifiedBy" title="http://www.w3.org/ns/td#specifiedBy">
+            <span>specified by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#subscription" title="http://www.w3.org/ns/td#subscription">subscription</a>
+      </li>
+      <li>
+         <a href="#uriVariables" title="http://www.w3.org/ns/td#uriVariables">uriVariables</a>
+      </li>
+      <li>
+         <a href="#version" title="http://www.w3.org/ns/td#version">
+            <span>version</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="actions">
+      <h3>actions<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#actions</p>
+      <div class="comment">
+         <span class="markdown">All Action-based interaction patterns of the Thing.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#interactions" title="http://www.w3.org/ns/td#interactions">interactions</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Action" title="http://www.w3.org/ns/td#Action">Action</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="cancellation">
+      <h3>cancellation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#cancellation</p>
+      <div class="comment">
+         <span class="markdown">Defines any data that needs to be passed to cancel a subscription, e.g., a specific message to remove a Webhook</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="http://www.w3.org/ns/td#Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="data">
+      <h3>data<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#data</p>
+      <div class="comment">
+         <span class="markdown">Defines the data schema of the Event instance messages pushed by the Thing.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="http://www.w3.org/ns/td#Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="events">
+      <h3>events<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#events</p>
+      <div class="comment">
+         <span class="markdown">All Event-based interaction patterns of the Thing.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#interactions" title="http://www.w3.org/ns/td#interactions">interactions</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Event" title="http://www.w3.org/ns/td#Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="forms">
+      <h3>forms<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#forms</p>
+      <div class="comment">
+         <span class="markdown">Indicates one or more endpoints from which an interaction pattern is accessible</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InteractionPattern" title="http://www.w3.org/ns/td#InteractionPattern">InteractionPattern</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Form" title="http://www.w3.org/ns/td#Form">Form</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="idempotent">
+      <h3>idempotent<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#idempotent</p>
+      <div class="comment">
+         <span class="markdown">Signals if the action is idempotent (=true) or not. Informs if the action can be called repeatedly with the same outcome. </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Action" title="http://www.w3.org/ns/td#Action">Action</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="input">
+      <h3>input<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#input</p>
+      <div class="comment">
+         <span class="markdown">Used to define the input data schema of the action.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Action" title="http://www.w3.org/ns/td#Action">Action</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="interactions">
+      <h3>interactions<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#interactions</p>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#actions" title="http://www.w3.org/ns/td#actions">actions</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#events" title="http://www.w3.org/ns/td#events">events</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#properties" title="http://www.w3.org/ns/td#properties">properties</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InteractionPattern" title="http://www.w3.org/ns/td#InteractionPattern">InteractionPattern</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="links">
+      <h3>links<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#links</p>
+      <div class="comment">
+         <span class="markdown">Provides Web links to arbitrary resources that relate to the specified Thing Description.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Link" title="http://www.w3.org/ns/td#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="output">
+      <h3>output<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#output</p>
+      <div class="comment">
+         <span class="markdown">Used to define the output data schema of the action.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Action" title="http://www.w3.org/ns/td#Action">Action</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="properties">
+      <h3>properties<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#properties</p>
+      <div class="comment">
+         <span class="markdown">All Property-based interaction patterns of the Thing.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#interactions" title="http://www.w3.org/ns/td#interactions">interactions</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Property" title="http://www.w3.org/ns/td#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="safe">
+      <h3>safe<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#safe</p>
+      <div class="comment">
+         <span class="markdown">Signals if the action is safe (=true) or not. Used to signal if there is no internal state (cf. resource state) is changed when invoking an Action. In that case responses can be cached as example.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Action" title="http://www.w3.org/ns/td#Action">Action</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="security">
+      <h3>security<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#security</p>
+      <div class="comment">
+         <span class="markdown">Set of security configurations, provided as an array, that must all be satisfied for access to resources at or below the current level, if not overridden at a lower level.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Form" title="http://www.w3.org/ns/td#Form">Form</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#InteractionPattern" title="http://www.w3.org/ns/td#InteractionPattern">InteractionPattern</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="specifiedBy">
+      <h3>specified by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#specifiedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Data" title="http://www.w3.org/ns/td#Data">Data</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="subscription">
+      <h3>subscription<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#subscription</p>
+      <div class="comment">
+         <span class="markdown">Defines data that needs to be passed upon subscription, e.g., filters or message format for setting up Webhooks.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="http://www.w3.org/ns/td#Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Specification" title="http://www.w3.org/ns/td#Specification">Specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="uriVariables">
+      <h3>uriVariables<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#uriVariables</p>
+      <div class="comment">
+         <span class="markdown">Define URI template variables as collection based on DataSchema declarations.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InteractionPattern" title="http://www.w3.org/ns/td#InteractionPattern">InteractionPattern</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/td#DataSchema">data schema</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="version">
+      <h3>version<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#version</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Versioning" title="http://www.w3.org/ns/td#Versioning">Versioning</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#version">data property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#anchor" title="http://www.w3.org/ns/td#anchor">anchor</a>
+      </li>
+      <li>
+         <a href="#base" title="http://www.w3.org/ns/td#base">base</a>
+      </li>
+      <li>
+         <a href="#contentType" title="http://www.w3.org/ns/td#contentType">contentType</a>
+      </li>
+      <li>
+         <a href="#created" title="http://www.w3.org/ns/td#created">created</a>
+      </li>
+      <li>
+         <a href="#description" title="http://www.w3.org/ns/td#description">description</a>
+      </li>
+      <li>
+         <a href="#href" title="http://www.w3.org/ns/td#href">href</a>
+      </li>
+      <li>
+         <a href="#instance" title="http://www.w3.org/ns/td#instance">instance</a>
+      </li>
+      <li>
+         <a href="#lastModified" title="http://www.w3.org/ns/td#lastModified">lastModified</a>
+      </li>
+      <li>
+         <a href="#name" title="http://www.w3.org/ns/td#name">name</a>
+      </li>
+      <li>
+         <a href="#observable" title="http://www.w3.org/ns/td#observable">observable</a>
+      </li>
+      <li>
+         <a href="#op" title="http://www.w3.org/ns/td#op">op</a>
+      </li>
+      <li>
+         <a href="#rel" title="http://www.w3.org/ns/td#rel">rel</a>
+      </li>
+      <li>
+         <a href="#subprotocol" title="http://www.w3.org/ns/td#subprotocol">subprotocol</a>
+      </li>
+      <li>
+         <a href="#support" title="http://www.w3.org/ns/td#support">support</a>
+      </li>
+      <li>
+         <a href="#title" title="http://www.w3.org/ns/td#title">title</a>
+      </li>
+      <li>
+         <a href="#type" title="http://www.w3.org/ns/td#type">type</a>
+      </li>
+      <li>
+         <a href="#version" title="http://www.w3.org/ns/td#version">
+            <span>version</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="anchor">
+      <h3>anchor<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#anchor</p>
+      <div class="comment">
+         <span class="markdown">By default, the context of a link is the URL of the representation it is associated with, and is serialised as a URI. When present, the anchor parameter overrides this with another URI, such as a fragment of this resource, or a third resource (i.e., when the anchor value is an absolute URI).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Link" title="http://www.w3.org/ns/td#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="base">
+      <h3>base<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#base</p>
+      <div class="comment">
+         <span class="markdown">Define the base URI that is valid for all defined local interaction resources. All other URIs in the TD must then be resolved using the algorithm defined in [[!RFC3986]].</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contentType">
+      <h3>contentType<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#contentType</p>
+      <div class="comment">
+         <span class="markdown">Assign a content type based on a media type [[!MEDIATYPES]] (e.g., 'application/json) and (optional) parameters (e.g., 'charset=utf-8')</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Form" title="http://www.w3.org/ns/td#Form">Form</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="created">
+      <h3>created<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#created</p>
+      <div class="comment">
+         <span class="markdown">Provides information when the TD instance was created.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="description">
+      <h3>description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#description</p>
+      <div class="comment">
+         <span class="markdown">Provides additional (human-readable) information.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="href">
+      <h3>href<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#href</p>
+      <div class="comment">
+         <span class="markdown">URI of the endpoint where an interaction pattern is provided.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Form" title="http://www.w3.org/ns/td#Form">Form</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Link" title="http://www.w3.org/ns/td#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="instance">
+      <h3>instance<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#instance</p>
+      <div class="comment">
+         <span class="markdown">Provides a version identicator of this TD instance.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lastModified">
+      <h3>lastModified<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#lastModified</p>
+      <div class="comment">
+         <span class="markdown">Provides information when the TD instance was last modified.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name">
+      <h3>name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#name</p>
+      <div class="comment">
+         <span class="markdown">Name of the Thing.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="observable">
+      <h3>observable<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#observable</p>
+      <div class="comment">
+         <span class="markdown">Indicates whether a remote servient can subscribe to ("observe") the Property, to receive change notifications or periodic updates (true/false).</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Property" title="http://www.w3.org/ns/td#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="op">
+      <h3>op<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#op</p>
+      <div class="comment">
+         <span class="markdown">Indicates the expected result of performing the operation described by the form.
+
+For example, the Property interaction allows get and set operations.  
+The protocol binding may contain a form for the get operation and a different form for the set operation.  
+The op attribute indicates which form is which and allows the client to select the correct form for the operation required.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Link" title="http://www.w3.org/ns/td#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="rel">
+      <h3>rel<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#rel</p>
+      <div class="comment">
+         <span class="markdown">Indicates the relation to an other Thing.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Link" title="http://www.w3.org/ns/td#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="subprotocol">
+      <h3>subprotocol<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#subprotocol</p>
+      <div class="comment">
+         <span class="markdown">Indicates the exact mechanism by which an interaction will be accomplished for a given protocol when there are multiple options.
+     
+For example, for HTTP and Events, it indicates which of several available mechanisms should be used for asynchronous notifications.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Form" title="http://www.w3.org/ns/td#Form">Form</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="support">
+      <h3>support<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#support</p>
+      <div class="comment">
+         <span class="markdown">Provides information about the TD maintainer (e.g., author, link or telephone number to get support, etc).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Thing" title="http://www.w3.org/ns/td#Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="title">
+      <h3>title<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#title</p>
+      <div class="comment">
+         <span class="markdown">Provides a human-readable title (e.g., display a text for UI representation) of the interaction pattern.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="type">
+      <h3>type<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#type</p>
+      <div class="comment">
+         <span class="markdown">Provides a hint indicating what the media type [[!MEDIATYPES]] of the result of dereferencing the link should be.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Link" title="http://www.w3.org/ns/td#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="version">
+      <h3>version<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/td#version</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#version">object property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

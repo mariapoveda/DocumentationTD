@@ -14,7 +14,7 @@
 
 <http://www.w3.org/ns/td#> rdf:type owl:Ontology ;
                            
-                           vann:preferredNamespacePrefix "td" ;
+                           vann:preferredNamespacePrefix "td" ; 
                            
                            owl:versionInfo "0.5.0" ;
                            
